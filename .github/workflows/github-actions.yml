@@ -15,7 +15,7 @@ jobs:
           echo gradle.publish.secret=${GRADLE_SECRET} >> ~/.gradle/gradle.properties
 
       - name: Run Gradle Wrapper Daemon, Build, and Test
-        run:
+        run: |
           ./gradlew --daemon
           ./gradlew build -x test
           ./gradlew test
