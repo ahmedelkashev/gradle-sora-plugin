@@ -4,6 +4,8 @@ jobs:
   test-deploy-plugin:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: Store gradle key & secret into gradle.properties
         env:
           GRADLE_KEY: ${{ secrets.GRADLE_KEY }}
@@ -19,11 +21,6 @@ jobs:
           pwd
           ls
           ls -al
-          ls -al ..
-          ls -al ../../
-          ls -al ../../../
-          ls -al ../../../../
-          ls -al ../../../../../
 
       - name: make scripts executable
         run: |
