@@ -22,7 +22,7 @@ env:
   - secure: "QxlgabB747DVcRND1Zx0FZHGIXdx6t6NmkwhTTgeb1+0SQq1fnI26aiWjQosN6TOwoi2g4kXzl6RJYss6YrO7A/iQ0vVxrKexTgd2ZTBqT8S5MrRgCes/5dPKLRcvzsyzHedExEgld/Wj9RCISA7uSv+EOzFHeklN1mEEc8kEeG8rJqlsmSmxnbMiOSR4ymOcQ9nibfzaKu483p7HLBDrJgUtXQVvxFXuJLiIUfAChnltN05crmpa215D0gTUzBBuRTf+LxoEMaCWH8CWRPZENGs4XTH4vRJrnhVEoCyMRgII6ruS/LvQpRY8ZRuUGNhuyP2F40bed8yUCDmaZU2PVQ8K/Voqu7TovUeEhOIfEbI0vh7vU9cttQ5xAdHr3wixcILgl9RCzb2vdEHHNjbDe/+eNSpDb2uZZrMUfwhE9ptyISamEiRr5ZqSFLi30SW4C63IBEdtk3RUl4yF3FxAfpergUjJxFPQgV1ve80c8BKBpd7kqqB15lEPgvQBj/rXE2/KMFirNEvM6eJCf+LyOnnpuwe+9xatqeRqyAm1mczJiWLWGAD3/5UBTt3w6A921Rx1na7MA7TaOQqRftThjSAD/wqEjAMlZaxpGwO1y3xfSdMld9mZb0oTGsGBcrxpgAaeKqdWeUNcQy4p/xpMu2PZQbocEJ/hmOdgNErcVM="
 
 before_script:
-  - kdir -p ~/.gradle/
+  - mkdir -p ~/.gradle/
   - echo gradle.publish.key=${GRADLE_KEY} >> ~/.gradle/gradle.properties
   - echo gradle.publish.secret=${GRADLE_SECRET} >> ~/.gradle/gradle.properties
 
