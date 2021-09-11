@@ -8,7 +8,7 @@ jobs:
         env:
           GRADLE_KEY: ${{ secrets.GRADLE_KEY }}
           GRADLE_SECRET: ${{ secrets.GRADLE_SECRET }}
-        run:
+        run: |
           mkdir -p ~/.gradle/
           touch ~/.gradle/gradle.properties
           echo gradle.publish.key=${GRADLE_KEY} >> ~/.gradle/gradle.properties
