@@ -16,7 +16,6 @@ jobs:
           
       - name: Run Gradle Wrapper Daemon, Build, and Test
         run: ./gradlew --daemon
-        #shell: bash
         run: |
           ./gradlew --daemon
           ./gradlew build -x test
