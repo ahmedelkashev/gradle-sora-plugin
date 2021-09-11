@@ -19,11 +19,7 @@ jobs:
           pwd
           ls
           ls -al
-          ls ..
-          ls -al ..
-          ls ../../
-          ls -al ../../
-
+          
       - name: make scripts executable
         run: |
           chmod +x gradlew
